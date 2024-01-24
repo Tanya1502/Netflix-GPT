@@ -9,7 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG_URL, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -93,7 +93,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://netflix-googleai.netlify.app/static/media/background-image.c85c74f4893003d35490.jpg"
+          src={BG_URL}
           alt="bg"
         />
       </div>
